@@ -1,0 +1,11 @@
+---
+title: First Try
+author: Indira Aryal
+date: '2020-11-22'
+slug: first-try
+categories:
+  - R
+tags:
+  - R Markdown
+---
+hello
