@@ -8,3 +8,26 @@ categories:
 tags:
   - R Markdown
 ---
+```{r}
+library(MASS)
+library(tidyverse)
+data("cats")
+data=cats
+View(data)
+library(ggplot2)
+data%>%ggplot()+
+  aes(x=Bwt,y=Hwt)+
+  geom_point(aes(col=Sex))
+```
+```{r}
+model <- lm(Hwt~Bwt+Sex,data = data)
+summary(model)
+```
+```{r}
+data%>%ggplot()+
+  aes(x=Bwt,y=Hwt)+
+  geom_point(aes(col=Sex))+
+  geom_smooth(method = "lm",se=0,aes(col=Sex))
+
+```
+
