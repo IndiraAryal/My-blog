@@ -1,0 +1,10 @@
+---
+title: Linear Model
+author: Indira Aryal
+date: '2020-11-25'
+slug: linear-model
+categories:
+  - R
+tags:
+  - R Markdown
+---
